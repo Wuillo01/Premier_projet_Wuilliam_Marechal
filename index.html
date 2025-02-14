@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Les bases du web</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav id="main-nav">
+            <img src="img/Zelda.png" alt="Avatar" /> <!-- Renseignez entre les guillements de src=“” le lien de l’image -->
+            <ul>
+                <li><a href="#">À propos</a></li>
+                <li class="active"><a href="#">Bases du Web</a></li>
+                <li><a href="#">Plan d'apprentissage</a></li>
+                <li><a href="#">Projets</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <h1>Les bases du web par Wuilliam <!-- Modifiez votre prénom --></h1>
+        <p class="subtitle">Une page pour concentrer les informations clés du Web et du développement !</p>
+    </header>
+
+    <section id="course">
+        <h2>Cours suivi</h2>
+        <a href="https://openclassrooms.com/fr/courses/1946386-comprendre-le-web" target="_blank">
+            <img src="img/cours.png" alt="Cours Comprendre le web" />
+        </a>
+    </section>
+
+    <section id="concepts">
+        <h2>Concepts clés</h2>
+        <div class="flex">
+            <article class="card">
+                <h3>Partie 1 - Découvrez le web et ses origines</h3>
+                <div class="dropdown">
+                    <h4>Web</h4>
+                        <p>
+                            Originaire du mot anglais « Web », qui se traduit littéralement par « toile », le concept du Web a pris naissance dans un cadre technologique et numérique spécifique. Sir Tim Berners-Lee, un scientifique britannique, a inventé le World Wide Web (WWW) en 1989. Cette appellation, « World Wide Web », exprime l’idée d’une toile qui s’étend à l’échelle mondiale, englobant la planète entière.
+                        <br>
+                        Ainsi, le Web est, en réalité, une immense constellation de documents et d’autres ressources web, reliés entre eux par des hyperliens. Ces éléments sont interconnectés et accessibles au public via le réseau Internet. En somme, le Web est comparable à un vaste océan d’informations dans lequel nous pouvons plonger à tout moment pour explorer, apprendre et interagir.
+                        </p> <!-- Renseignez la définition -->
+                </div>
+                <div class="dropdown">
+                    <h4>Internet</h4>
+                        <p>
+                            Internet est un réseau informatique mondial accessible au public ainsi qu'aux entreprises.
+                        </p> <!-- Renseignez la définition -->
+                </div>
+                <div class="dropdown">
+                    <h4>Cloud</h4>
+                        <p>
+                            Le cloud (nuage en français) désigne un endroit où sont stockées des ressources informatiques auxquelles on peut accéder à distance via un réseau de communication (bien souvent Internet).
+                            <br>
+                            En clair, au lieu d’utiliser son ordinateur personnel pour lancer une application ou stocker ses données, on se connecte à des serveurs qui font eux-même le travail : c’est le cloud computing.
+                            <br>
+                            Lorsqu’on utilise une application accessible exclusivement via Internet, on parle de logiciel en mode SAAS (Software As A Service).
+                         </p> <!-- Renseignez la définition -->
+                </div>
+                <div class="dropdown">
+                    <h4>W3C</h4>
+                        <p>
+                            Le World Wide Web Consortium, abrégé par le sigle W3C, est un organisme de standardisation à but non lucratif, fondé le 1er octobre 1994 chargé de promouvoir la compatibilité des technologies du World Wide Web telles que HTML5, HTML, XHTML, XML, RDF, SPARQL, CSS, XSL, PNG, SVG, MathML et SOAP.
+                            <br>
+                            Fonctionnant comme un consortium international, il compte 452 membres au 1er octobre 2021.
+                        </p> <!-- Renseignez la définition -->
+                </div>
+            </article>
+            <article class="card">
+                <h3>Partie 2 - Distinguez les langages du Web</h3>
+                <div class="dropdown">
+                    <h4>Langages client</h4>
+                        <p>
+                            Les langages client servent à fournir des informations de base pour la construction des sites web. C’est un peu comme des plans d’architecte.<br>
+                            Ces langages sont principalement : HTML, qui permet de renseigner le contenu du site (textes ou images…)
+                        </p> <!-- Renseignez la définition -->
+                </div>
+                <div class="dropdown">
+                    <h4>Navigateurs</h4>
+                        <p>
+                            Un navigateur web (navigateur Web, au Canada1,2) ou fureteur2, est un logiciel conçu pour consulter et afficher le World Wide Web.
+                            <br>
+                            Techniquement, c'est au minimum un client HTTP.
+                        </p> <!-- Renseignez la définition -->
+                </div>
+                <div class="dropdown">
+                    <h4>Langages serveur</h4>
+                        <p>
+                            Un langage serveur, ou plus précisément un langage de script côté serveur (de l'anglais : server-side scripting) est un langage de programmation mis en œuvre sur un serveur HTTP pour produire une page Web dynamique.
+                            <br>
+                            L'utilisation d'un langage serveur, nécessaire pour utiliser une base de données, est indispensable pour la majorité des scripts complexes.
+                            <br>
+                            Un langage serveur est interprété par un logiciel situé sur un serveur, contrairement à la partie client, interprétée sur l'ordinateur du visiteur.
+                        </p> <!-- Renseignez la définition -->
+                </div>
+                <div class="dropdown">
+                    <h4>Frameworks</h4>
+                        <p>
+                            En programmation informatique, un framework (appelé aussi infrastructure logicielle1, infrastructure de développement, environnement de développement, socle d'applications, cadre d'applications ou cadriciel) est un ensemble cohérent de composants logiciels structurels qui sert à créer les fondations ainsi que les grandes lignes de tout ou partie d'un logiciel, c'est-à-dire une architecture.
+                        </p> <!-- Renseignez la définition -->
+                </div>
+                <div class="dropdown">
+                    <h4>Bases de données</h4>
+                        <p>
+                            Une base de données (que nous nommerons BDD par commodité) est une collection d’informations organisées afin d’être facilement consultables, gérables et mises à jour.
+                            <br>
+                            Au sein d’une database, les données sont organisées en lignes, colonnes et tableaux.
+                        </p> <!-- Renseignez la définition -->
+                </div>
+                <div class="dropdown">
+                    <h4>Site responsive</h4>
+                        <p>
+                            c’est un site web qui est conçu pour répondre et s’adapter aux appareils mobiles, à la fois en ayant un aspect attrayant et en fonctionnant efficacement pour les visiteurs sur les mobiles.
+                        </p> <!-- Renseignez la définition -->
+                </div>
+                <div class="dropdown">
+                    <h4>Application mobile</h4>
+                        <p>
+                            Une application mobile ou appli est un logiciel applicatif conçu pour un appareil électronique mobile, tel qu'un assistant personnel, un téléphone portable, un smartphone, un baladeur numérique, une tablette tactile.
+                        </p> <!-- Renseignez la définition -->
+                </div>
+            </article>
+            <article class="card">
+                <h3>Partie 3 - Découvrez le fonctionnement du réseau</h3>
+                <div class="dropdown">
+                    <h4>Serveurs</h4>
+                        <p>
+                            Un serveur informatique est un dispositif informatique (matériel et logiciel) qui offre des services à un ou plusieurs clients (parfois des milliers). 
+                            <br>
+                            Les services les plus courants sont :
+                            <br>
+                            - l'accès aux informations du World Wide Web ;
+                            <br>
+                            - le courrier électronique ;
+                            <br>
+                            - le partage de périphériques (imprimantes, disques durs, etc.) ;
+                            <br>
+                            - le commerce électronique ;
+                            <br>
+                            - le stockage en base de données ;
+                            <br>
+                            - la gestion de l'authentification et du contrôle d'accès ;
+                            <br>
+                            - le jeu et la mise à disposition de logiciels applicatifs.
+                           <br>
+                           En fonctionnement, un serveur répond automatiquement à des requêtes provenant d'autres dispositifs informatiques (les clients), selon le principe dit client-serveur.
+                           <br>
+                           Le format des requêtes et des résultats est normalisé, se conforme à des protocoles réseaux et chaque service peut être exploité par tout client qui met en œuvre le protocole propre à celui-ci.
+                           <br>
+                            Les serveurs sont utilisés par les entreprises, les institutions et les opérateurs de télécommunication. Ils sont courants dans les centres de traitement de données et le réseau Internet.
+                        </p> <!-- Renseignez la définition -->
+                </div>
+                <div class="dropdown">
+                    <h4>Adresse IP</h4>
+                        <p>
+                            Une adresse IP (Internet Protocol) est un numéro d'identification unique attribué de façon permanente ou provisoire à chaque périphérique faisant partie d'un même réseau informatique utilisant l'Internet Protocol.
+                            <br>
+                            L'adresse IP est à l'origine du système d'acheminement (le routage) des paquets de données sur Internet.
+                            <br>
+                            Il existe deux grandes versions d'adresses IP :
+                            <br>
+                            - la version 4 (IPv4) codée sur 32 bits, et la version 6 (IPv6) codée sur 128 bits.
+                            <br>
+                            - La version 4 est actuellement la plus utilisée : elle est généralement représentée en notation décimale avec quatre nombres compris entre 0 et 255, séparés par des points, ce qui donne par exemple « 181.174.87.53 »
+                        </p> <!-- Renseignez la définition -->
+                </div>
+                <div class="dropdown">
+                    <h4>Nom d’hôte et DNS</h4>
+                        <p>
+                            Nom d'hotes :
+                            <br>
+                            Aux origines de TCP/IP, étant donné que les réseaux étaient très peu étendus ou autrement dit que le nombre d'ordinateurs connectés à un même réseau était faible, les administrateurs réseau créaient des fichiers appelés tables de conversion manuelle.
+                            <br>Ces tables de conversion manuelle étaient des fichiers séquentiels, généralement nommés hosts ou hosts.txt, associant sur chaque ligne l'adresse IP de la machine et le nom littéral associé, appelé nom d'hôte.
+                            <br>
+                            Introduction au Domain Name System.
+                            <br>
+                            Le système précédent de tables de conversion nécessitait néanmoins la mise à jour manuelle des tables de tous les ordinateurs en cas d'ajout ou de modification d'un nom de machine.
+                            <br>
+                            Ainsi, avec l'explosion de la taille des réseaux, et de leur interconnexion, il a fallu mettre en place un système de gestion des noms hiérarchisé et plus facilement administrable.
+                            <br>
+                            Le DNS :
+                            <br>
+                            Le système nommé Domain Name System (DNS), traduisez Système de nom de domaine, a été mis au point en novembre 1983 par Paul Mockapetris (RFC 882 et RFC 883), puis révisé en 1987 dans les RFCs 1034 et 1035.
+                            <br>
+                            Le DNS a fait l'objet depuis de nombreuses RFCs.
+                            <br>
+                            Ce système propose :
+                            <br>
+                            - un espace de noms hiérarchique permettant de garantir l'unicité d'un nom dans une structure arborescente, à la manière des systèmes de fichiers d'Unix.
+                            <br>
+                            - un système de serveurs distribués permettant de rendre disponible l'espace de noms.
+                            <br>
+                            - un système de clients permettant de « résoudre » les noms de domaines, c'est-à-dire interroger les serveurs afin de connaître l'adresse IP correspondant à un nom.
+                        </p> <!-- Renseignez la définition -->
+                </div>
+                <div class="dropdown">
+                    <h4>Protocoles</h4>
+                        <p>
+                            Un protocole informatique (ou parfois tout simplement un protocole quand le contexte de l'informatique est clair) est un ensemble de règles qui régissent les échanges de données ou le comportement collectif de processus ou d'ordinateurs en réseaux ou d'objets connectés.
+                            <br>
+                            Un protocole a pour but de réaliser une ou plusieurs tâches concourant à un fonctionnement harmonieux d'une entité générale.
+                            <br>
+                            Définition et normalisation des protocoles.
+                            <br>
+                            Les protocoles mettent en communication différentes entités participantes appelées « agents », le but d'un protocole étant de faire coopérer ces agents à une tâche commune ou de leur faire s'échanger des données, pour cela on les définit aussi rigoureusement que l'on peut.
+                            <br>
+                            Par exemple, le protocole de Bitcoin est « établi » ou régulé par son code informatique1 [Interprétation personnelle ?].
+                            <br>
+                            Certains protocoles sont « normalisés » par des comités de normalisation, formel comme l'ISO ou informel comme l'IETF pour Internet ; on parle parfois aussi de standards.
+                            <br>
+                            Les protocoles dits « propriétaires », sont spécifiques à un constructeur ou ou à un fabricant, mais ne sont pas ouverts, tandis que les protocoles normalisé et publics permettent à plusieurs constructeurs ou fabricants de faire coopérer des agents.
+                        </p> <!-- Renseignez la définition -->
+                </div>
+            </article>
+            <article class="card">
+                <h3>Partie 4 - Identifiez les métiers du web</h3>
+                <div class="dropdown">
+                    <h4>Développeurs</h4>
+                        <p>
+                            Le développeur est un technicien en charge de la réalisation d’un système ou d’une application : site web, appli mobile, logiciel embarqué, jeu vidéo, distributeur à billets...
+                            <br>
+                            Lors de la conception d’un projet, on exprime les besoins fonctionnels, on détaille ce qu’il doit s’afficher, ce qu’il doit se passer.
+                            <br>
+                            Le rôle du développeur est de traduire ces besoins en code ; un code que la machine pourra comprendre et exécuter.
+                        </p> <!-- Renseignez la définition -->
+                </div>
+                <div class="dropdown">
+                    <h4>Product Managers et chefs de projets</h4>
+                        <p>
+                            Le product manager, ou chef de produit, est responsable de la gestion du cycle de vie complet d’un produit. Il supervise le développement de la conception jusqu’à la commercialisation, en passant par la phase de prototypage, les essais et la fabrication.
+                            <br>
+                            Il s’agit en quelque sorte d’un « chef de projet » qui gère un projet de développement d’un nouveau produit digital ou physique. Mais à la différence du chef de projet, le product manager est bien plus impliqué dans la stratégie commerciale : il intervient dans la fixation du prix du produit, l’argumentaire de vente,  il gère les campagnes publicitaires et marketing, etc.
+                            <br>
+                            Le chef de projet :
+                            <br>
+                            Le chef de projet a pour mission de mener à bien le projet, de piloter et de gérer l’équipe et le plan d’action afin d’atteindre les objectifs fixés dans le cadre du projet. Il assure la coordination de l’équipe et la communication avec les parties prenantes au quotidien.
+
+                        </p> <!-- Renseignez la définition -->
+                </div>
+                <div class="dropdown">
+                    <h4>Designers</h4>
+                        <p>
+                            Un designer ([dizajnəʁ]), parfois francisé en designeur (féminin designeuse), est un professionnel qui conçoit un produit en harmonisant les critères esthétiques et fonctionnels de celui-ci3.
+                            <br>
+                            Le designer peut être spécialisé (design d'espace, design de produits, design graphique, etc.) ou pluridisciplinaire (design signalétique, design de services, etc.). Il travaille souvent en collaboration avec des spécialistes d'autres disciplines, pour analyser et résoudre les problèmes soulevés par un projet. Il est l'interface entre les services commerciaux et les services de fabrication. 
+                        </p> <!-- Renseignez la définition -->
+                </div>
+                <div class="dropdown">
+                    <h4>Testeurs</h4>
+                        <p>
+                            Le testeur est le spécialiste de la chasse aux bugs, ces erreurs qui empêchent le bon fonctionnement d'un logiciel. À lui de les signaler au service développement. Plus qu'une passion, c'est un métier à part entière.
+                        </p> <!-- Renseignez la définition -->
+                </div>
+                <div class="dropdown">
+                    <h4>Techniciens informatique</h4>
+                        <p>
+                            Le technicien informatique est un expert en informatique qui s'occupe d' installer, mettre à jour et réparer les appareils et systèmes informatiques, aussi bien du point de vue matériel (les composants physiques d'un ordinateur, serveur, etc.) que logiciel (les programmes et applications).    
+                        </p> <!-- Renseignez la définition -->
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <section id="languages">
+        <h2>Langages de développement web</h2>
+        <div class="slider">
+            <div class="slider-content">
+                <article class="card">
+                    <div class="language-title">
+                        <img src="img/html.png" alt="HTML" />
+                        <h3>HTML</h3>
+                    </div>
+                    <div class="language-content">
+                        <p>Front-End</p>
+                        <p>
+                            HTML (HyperText Markup Language) est le langage standard utilisé pour créer des pages web. Il permet de structurer le contenu d'une page en utilisant des éléments tels que des paragraphes, des listes, des images et des tableaux.
+                            <br>
+                            Pour créer une page web en HTML, il suffit de créer un fichier avec l'extension .html, qui peut être ouvert dans un navigateur web. HTML est facile à apprendre et constitue la base du développement web.
+                        </p>
+                    </div>
+                </article>
+                <article class="card">
+                    <div class="language-title">
+                        <img src="img/css.png" alt="CSS" />
+                        <h3>CSS</h3>
+                    </div>
+                    <div class="language-content">
+                        <p>Front-End</p>
+                        <p>
+                            CSS (pour Cascading Style Sheets en anglais), soit feuilles de style en cascade, est un langage de feuille de style utilisé pour décrire la présentation d'un document écrit en HTML ou XML (y compris les dialects XML que sont SVG, MathML, ou XHTML).
+                            <br>
+                            CSS décrit la façon dont les éléments doivent être affichés à l'écran, sur papier, à l'oral ou sur d'autres médias.
+                        </p> <!-- Renseignez la définition -->
+                    </div>
+                </article>
+                <article class="card">
+                    <div class="language-title">
+                        <img src="img/js.png" alt="JavaScript" />
+                        <h3>JavaScript</h3>
+                    </div>
+                    <div class="language-content">
+                        <p>Front-End</p>
+                        <p>
+                            JavaScript est un langage de programmation qui permet d'implémenter des mécanismes complexes sur une page web.
+                            <br>
+                            À chaque fois qu'une page web fait plus que simplement afficher du contenu statique — afficher du contenu mis à jour à des temps déterminés, des cartes interactives, des animations 2D/3D, des menus vidéo défilants, ou autre, JavaScript a de bonnes chances d'être impliqué.
+                            <br>
+                            C'est la troisième couche des technologies standards du web, les deux premières (HTML et CSS) étant couvertes bien plus en détail dans d'autres tutoriels sur MDN.
+                        </p> <!-- Renseignez la définition -->
+                    </div>
+                </article>
+                <article class="card">
+                    <div class="language-title">
+                        <img src="img/php.png" alt="PHP" /> <!-- Renseignez entre les guillements de src=“” le lien de l’image -->
+                        <h3>PHP</h3>
+                    </div>
+                    <div class="language-content">
+                        <p>Back-End</p>
+                        <p>
+                            PHP: Hypertext Preprocessor6, plus connu sous son sigle PHP (sigle auto-référentiel), est un langage de programmation libre7, principalement utilisé pour produire des pages Web dynamiques via un serveur web6, mais pouvant également fonctionner comme n'importe quel langage interprété de façon locale. PHP est un langage impératif orienté objet.
+                            <br>
+                            C'est un langage de script utilisé le plus souvent côté serveur : dans cette architecture, le serveur interprète le code PHP des pages web demandées et génère du code (HTML, XHTML, CSS par exemple) et des données (JPEG, GIF, PNG par exemple) pouvant être interprétés et rendus par un navigateur web. PHP peut également générer d'autres formats comme le WML, le SVG et le PDF.
+                        </p> <!-- Renseignez la définition -->
+                    </div>
+                </article>
+                <article class="card">
+                    <div class="language-title">
+                        <img src="img/java.png" alt="Java" /> <!-- Renseignez entre les guillements de src=“” le lien de l’image -->
+                        <h3>Java</h3>
+                    </div>
+                    <div class="language-content">
+                        <p>Back-End</p>
+                        <p>
+                            Java est un langage de programmation de haut niveau orienté objet créé par James Gosling et Patrick Naughton, employés de Sun Microsystems, avec le soutien de Bill Joy (cofondateur de Sun Microsystems en 1982), présenté officiellement le 23 mai 1995 au SunWorld.
+                            <br>
+                            La société Sun est rachetée en 2009 par la société Oracle qui détient et maintient désormais Java.
+                            <br>
+                            Un logiciel écrit en langage Java a pour particularité d'être compilé vers un code intermédiaire formé de bytecodes qui peut être exécuté dans une machine virtuelle Java (JVM) en faisant abstraction du système d'exploitation.
+                            <br>
+                            Java 23 est officiellement disponible depuis le 17 septembre 2024. Cette version fait suite à la LTS Java 21, et précède la prochaine LTS attendue, Java 25, prévue pour septembre 20254.
+                        </p> <!-- Renseignez la définition -->
+                    </div>
+                </article>
+                <article class="card">
+                    <div class="language-title">
+                        <img src="img/python.png" alt="Python" /> <!-- Renseignez entre les guillements de src=“” le lien de l’image -->
+                        <h3>Python</h3>
+                    </div>
+                    <div class="language-content">
+                        <p>Back-End</p>
+                        <p>
+                            Python (prononcé /pi.tɔ̃/) est un langage de programmation interprété, multiparadigme et multiplateformes. Il favorise la programmation impérative structurée, fonctionnelle et orientée objet. Il est doté d'un typage dynamique fort, d'une gestion automatique de la mémoire par ramasse-miettes et d'un système de gestion d'exceptions ; il est ainsi similaire à Perl, Ruby, Scheme, Smalltalk et Tcl.
+                            <br>
+                            Le langage Python est placé sous une licence libre proche de la licence BSD et fonctionne sur la plupart des plateformes informatiques, des smartphones aux ordinateurs centraux, de Windows à Unix avec notamment GNU/Linux en passant par macOS, ou encore Android, iOS, et peut aussi être traduit en Java ou .NET. Il est conçu pour optimiser la productivité des programmeurs en offrant des outils de haut niveau et une syntaxe simple à utiliser.
+                        </p> <!-- Renseignez la définition -->
+                    </div>
+                </article>
+                <article class="card">
+                    <div class="language-title">
+                        <img src="img/c.png" alt="C#" /> <!-- Renseignez entre les guillements de src=“” le lien de l’image -->
+                        <h3>C#</h3>
+                    </div>
+                    <div class="language-content">
+                        <p>Back-End</p>
+                        <p>
+                            C# (C sharp [siː.ʃɑːp] en anglais britannique) est un langage de programmation orientée objet, commercialisé par Microsoft depuis 20023 et destiné à développer sur la plateforme Microsoft .NET, au même titre que d’autres langages liés à cette plateforme (ex. : VB .NET, J#, etc.).
+                            <br>
+                            C# est dérivé du C++ et très proche du Java dont il reprend la syntaxe générale ainsi que les concepts, y ajoutant des notions telles que la surcharge des opérateurs, les indexeurs (en) et les délégués. Il est utilisé notamment pour développer des applications web sur la plateforme ASP.NET, ainsi que des jeux vidéo avec les moteurs de jeux Unity et Godot4.
+                        </p> <!-- Renseignez la définition -->
+                    </div>
+                </article>
+                <article class="card">
+                    <div class="language-title">
+                        <img src="img/sql.png" alt="SQL" /> <!-- Renseignez entre les guillements de src=“” le lien de l’image -->
+                        <h3>SQL</h3>
+                    </div>
+                    <div class="language-content">
+                        <p>Bases de données</p>
+                        <p>
+                            SQL (Structured Query Language) est un langage informatique normalisé servant à exploiter des bases de données relationnelles. La partie langage de manipulation des données de SQL permet de rechercher, d'ajouter, de modifier ou de supprimer des données dans les bases de données relationnelles. Grâce à ce langage, il est possible d’interroger les données par le biais de requêtes sur une base de données
+                        </p> <!-- Renseignez la définition -->
+                    </div>
+                </article>
+            </div>
+        </div>
+        <div class="slider-arrows">
+            <img src="img/left.png" alt="Gauche" id="left" />
+            <img src="img/right.png" alt="Droite" id="right" />
+        </div>
+    </section>
+
+    <section id="tools">
+        <h2>Boîte à outils du développeur</h2>
+        <ul class="card">
+            <li>
+                <strong>IDE comme VS Code</strong> :
+                <br>             
+                <a href="https://visualstudio.microsoft.com/fr/#vscode-section" target="_blank">
+                    <img src="img/VS-pt.jpg" alt="Visual Studio vs Visual Studio Code" />
+                </a>
+                <br>
+                Visual Studio Code est un éditeur de code extensible développé par Microsoft pour Windows, Linux et macOS2.
+                <br>
+                Les fonctionnalités incluent la prise en charge du débogage, la mise en évidence de la syntaxe, la complétion intelligente du code (IntelliSense3.), les snippets, la refactorisation du code et Git intégré.
+                <br>
+                Les utilisateurs peuvent modifier le thème, les raccourcis clavier, les préférences et installer des extensions qui ajoutent des fonctionnalités supplémentaires.
+                <br>
+                Le code source de Visual Studio Code provient du projet logiciel libre et open source VS Code de Microsoft publié sous la licence MIT permissive, mais les binaires compilés constituent un freeware, c'est-à-dire un logiciel gratuit pour toute utilisation mais propriétaire.<!-- Renseignez la définition -->
+            </li>
+            <li>
+                <strong>
+                    Github
+                </strong> : <br>
+                            GitHub (/ɡɪthʌb/, entreprise GitHub, Inc.) est un service web d'hébergement et de gestion de développement de logiciels, utilisant le logiciel de gestion de versions Git.
+                            <br>
+                            Ce site est développé en Ruby on Rails et Erlang par Chris Wanstrath, PJ Hyett et Tom Preston-Werner. GitHub propose des comptes professionnels payants, ainsi que des comptes gratuits pour les projets de logiciels libres.
+                            <br>
+                            Le site assure également un contrôle d'accès et des fonctionnalités destinées à la collaboration comme le suivi des bugs, les demandes de fonctionnalités, la gestion de tâches et un wiki pour chaque projet.
+                            <br>
+                             Le site est devenu le plus important dépôt de code au monde, utilisé comme dépôt public de projets libres ou dépôt privé d'entreprises. <!-- Renseignez la définition -->
+            </li>
+            <li>
+                <strong>
+                    Librairies / bibliothèques
+                </strong> : <br>
+                            En informatique, une bibliothèque logicielle est une collection de routines, qui peuvent être déjà compilées et prêtes à être utilisées par des programmes.
+                            <br>
+                            Les bibliothèques sont enregistrées dans des fichiers semblables, voire identiques aux fichiers de programmes, sous la forme d'une collection de fichiers de code objet rassemblés accompagnée d'un index permettant de retrouver facilement chaque routine3. Le mot « librairie » est souvent utilisé à tort pour désigner une bibliothèque logicielle. Il s'agit d'un anglicisme fautif dû au faux-ami library.
+                            <br>
+                            Les bibliothèques sont apparues dans les années 1950, et sont devenues un sujet incontournable de programmation. Elles sont utilisées pour réaliser des interfaces de programmation, des framework, des plugins ainsi que des langages de programmation.
+                            <br>
+                            Les routines contenues dans les bibliothèques sont typiquement en rapport avec des opérations fréquentes en programmation : manipulation des interfaces utilisateur, manipulation des bases de données ou calculs mathématiques.
+                            <br>
+                            Les bibliothèques sont manipulées par l'éditeur de lien et le système d'exploitation.
+                            <br>
+                            Les manipulations sont différentes suivant que la bibliothèque est statique ou partagée. Les emplacements et les noms des bibliothèques varient selon les systèmes d'exploitation. <!-- Renseignez la définition -->
+            </li>
+            <li>
+                <strong>
+                    Frameworks
+                </strong> : <br> 
+                            il s’agit de bibliothèques beaucoup plus élaborées, qui permettent de structurer l’entièreté de son code, comme un kit de construction ! Ils sont utilisés notamment pour des sites web plus importants, qui nécessitent beaucoup de code. Vous avez peut-être déjà entendu parler d’Angular pour JavaScript ? Il s'agit d'un framework assez connu. Pour utiliser des frameworks vous devez les télécharger et les inclure dans les projets sur votre IDE.
+                            <br>
+                            Exemple de langage :
+                            <br>
+                            •	Pour PHP : Symfony, Zend..., 
+                            <br>
+                            •	Pour Java : Java EE (ou J2EE), 
+                            <br>
+                            •	Pour Python : Django, 
+                            <br>
+                            •	Pour C# : ASP .NET <!-- Renseignez la définition -->
+            </li>
+        </ul>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
